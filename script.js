@@ -1,5 +1,7 @@
+
 let student = "euMesmo";
 let studentSkills = 10;
 //Eu sou Trybe
-// Eu creio em Jeova
+//Eu sou de Jeova
 console.log("Sucesso!");
+jubileu
