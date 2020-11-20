@@ -1,1 +1,0 @@
-acabei de terminar o exemplo da trybe sobre como funciona as tags h1, h2, a, p.
