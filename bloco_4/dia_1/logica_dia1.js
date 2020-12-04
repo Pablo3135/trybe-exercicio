@@ -38,3 +38,18 @@ if (number1 > number2 && number1 > number3){
     console.log("Number tree é maior")
 }
 */
+
+//Desafio 4
+/*
+let valor = "-"
+switch (valor) {
+    case "+":
+        console.log("Valor positivo")
+    break
+    case "-":
+        console.log("Valor Negativo")
+    break;
+    default:
+        console.log("0")
+}
+*/
