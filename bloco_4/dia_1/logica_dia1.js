@@ -53,3 +53,17 @@ switch (valor) {
         console.log("0")
 }
 */
+
+//Desafio 5
+/*
+let triangulo1 = 70
+let triangulo2 = 60
+let triangulo3 = 60
+let soma = triangulo1 + triangulo2 + triangulo3
+
+if (soma === 180){
+     console.log(true)
+ }else{
+     console.log(false)
+ }
+ */
