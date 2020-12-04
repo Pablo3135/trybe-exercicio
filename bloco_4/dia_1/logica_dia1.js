@@ -67,3 +67,24 @@ if (soma === 180){
      console.log(false)
  }
  */
+
+ //Desafio 6 
+/*
+let nome = "CALANGO"
+
+if(nome === "peão" || nome === "PEÃO"){
+    console.log("Move-se sempre uma casa para frente, exceto no primeiro movimento")
+}else if (nome === "cavalo" || nome ==="CAVALO"){
+    console.log("Única peça que pode saltar sobre as outras peças do tabuleiro e seu movimento é em L.")
+}else if (nome === "bispo" || nome ==="BISPO"){
+    console.log("Move-se na diagonal, quantas casas quiser")
+}else if (nome === "torre" || nome ==="TORRE"){
+    console.log("Move-se em linha reta, tanto na vertical quanto na horizontal, quantas casas quiser.")
+}else if (nome === "dama" || nome === "DAMA"){
+    console.log("pode mover-se em qualquer direção (vertical, horizontal e diagonal), porém quantas casas quiser, desde que estejam livres.")
+}else if (nome === "rei" || nome === "REI"){
+    console.log("Pode mover-se em qualquer direção, porém apenas uma casa por vez.")
+}else {
+    console.log("ERRO")
+}
+*/
