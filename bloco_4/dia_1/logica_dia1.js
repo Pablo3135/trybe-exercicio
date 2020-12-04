@@ -25,7 +25,7 @@ if (number1 > number2){
 */
 
 //Desafio 3 
-
+/*
 let number1 = 4
 let number2 = 3
 let number3 = 5
@@ -37,3 +37,4 @@ if (number1 > number2 && number1 > number3){
 }else {
     console.log("Number tree é maior")
 }
+*/
