@@ -109,3 +109,16 @@ if(porcentagem > 100 || porcentagem < 0){
     console.log("F")
 }
 */
+
+//Desafio 8
+/*
+let number1 = 2
+let number2 = 5
+let number3 = 3
+
+if(number1 % 2 === 0 || number2 % 2 === 0 || number3 % 2 === 0){
+    console.log(true)
+}else{
+    console.log(false)
+}
+*/
