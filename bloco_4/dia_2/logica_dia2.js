@@ -20,3 +20,13 @@ media = total / numbers.length
 console.log('O total é ' + media)
 }
 */
+
+//exercicio 4
+/*
+let total = 0
+for(i = 0; i < numbers.length; i++){
+total = total + numbers[i];
+media = total / numbers.length
+console.log('valor maior que 20 ' + media)
+}
+*/
