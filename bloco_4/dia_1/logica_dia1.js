@@ -12,7 +12,6 @@ console.log (soma, sub, mult, divisão, mód)
 */
 
 //Desafio 2
-
 /*
 let number1 = 1.5
 let number2 = 1
@@ -135,3 +134,9 @@ if(number1 % 2 != 0 || number2 % 2 != 0 || number3 % 2 != 0){
     console.log(false)
 }
 */
+
+//Desafio 10
+
+let custoDoProduto;
+let valorDeVenda;
+
