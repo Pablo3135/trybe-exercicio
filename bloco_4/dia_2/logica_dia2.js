@@ -27,6 +27,11 @@ let total = 0
 for(i = 0; i < numbers.length; i++){
 total = total + numbers[i];
 media = total / numbers.length
-console.log('valor maior que 20 ' + media)
+console.log("")
+if (media > 20){
+    console.log('valor maior que 20 ' + media)
+}else{
+    console.log('valor menor que 20 ' + media)
+}
 }
 */
