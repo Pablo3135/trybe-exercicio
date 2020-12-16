@@ -35,3 +35,14 @@ if (media > 20){
 }
 }
 */
+
+//exercicio 5
+/*
+let maior = 0
+for(i = 0; i < numbers.length; i++){
+    if(numbers[i] > maior){
+        maior = numbers[i]
+        console.log(maior)
+    }
+}
+*/
