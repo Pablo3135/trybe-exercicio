@@ -38,7 +38,7 @@ if (media > 20){
 
 //exercicio 5
 /*
-let maior = 0
+let maior = numbers[0]
 for(i = 0; i < numbers.length; i++){
     if(numbers[i] > maior){
         maior = numbers[i]
@@ -48,8 +48,9 @@ for(i = 0; i < numbers.length; i++){
 */
 
 //exercicio 6
-let impar = 0
 /*
+let impar = 0
+
 for(i = 0; i < numbers.length; i++){
     if(numbers[i] % 2 !== 0){
     impar += 1
@@ -59,5 +60,16 @@ if(impar === 0){
     console.log('Nenhum valor encontrado')
 }else{
     console.log(impar);
+}
+*/
+
+//exercicio 7
+/*
+let menor = numbers[0]
+for(i = 0; i < numbers.length; i++){
+    if(numbers[i] < menor){
+        menor = numbers[i]
+        console.log(menor)
+    }   
 }
 */
