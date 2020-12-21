@@ -13,3 +13,9 @@ console.log(`Bem-Vindo ${info.personagem}`)
 
 // exercicio 2
 /*console.log(info)*/
+
+// exercicio
+/*for (key in info) {
+    console.log(key)
+}
+*/
