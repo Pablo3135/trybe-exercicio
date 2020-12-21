@@ -14,8 +14,14 @@ console.log(`Bem-Vindo ${info.personagem}`)
 // exercicio 2
 /*console.log(info)*/
 
-// exercicio
+// exercicio 3
 /*for (key in info) {
     console.log(key)
+}
+*/
+
+// exercicio 4
+/*for (key in info) {
+    console.log(info[key])
 }
 */
