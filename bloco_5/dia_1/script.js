@@ -22,3 +22,16 @@ function corrigir () {
 }
 corrigir()
 
+function caixaAlta () {
+    let maiscula = document.getElementsByTagName("p")[0]
+    maiscula.innerHTML = maiscula.innerHTML.toUpperCase()
+}
+caixaAlta()
+
+function conteudo () {
+    let exibir = document.getElementsByTagName("p")
+    for(let i = 0; i < exibir.length; i += 1){
+        console.log(exibir[i].innerHTML);
+    }
+}
+conteudo()
