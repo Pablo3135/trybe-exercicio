@@ -98,7 +98,7 @@ friday("Sexta-feira")
 
 // exercicio 5
 
-function fryday(newFriday, dezFriday){
+function fryday( dezFriday, newFriday){
     let buttonContainer = document.querySelector("#btn-friday") 
     let clickButton = document.querySelectorAll(".friday")
      
@@ -113,4 +113,4 @@ function fryday(newFriday, dezFriday){
     })
 }
 
-fryday("Sextou", [4, 11, 18, 25])
+fryday([4, 11, 18, 25], "Sextou", )
