@@ -72,7 +72,7 @@ function createDaysOfTheWeek() {
   let setNewColor = 'red';
     
     clickButton.addEventListener("click", function(){
-        for(let i = 0; i < mudandoDeCor.length; i += 1){
+        for(let i in mudandoDeCor){
             if(mudandoDeCor[i].style.backgroundColor === setNewColor){
                 mudandoDeCor[i].style.background = backgroundColor
             } else {
