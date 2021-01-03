@@ -1,5 +1,5 @@
 function createDaysOfTheWeek() {
-    const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
+    const weekDays = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S']
     const weekDaysList = document.querySelector('.week-days');
   
     for (let index = 0; index < weekDays.length; index += 1) {
@@ -65,12 +65,10 @@ function createDaysOfTheWeek() {
   createHoliday("feriados")
 
   // Exercicio 3
-  function click(){
+  function click(backgroundColor, setNewColor){
   let clickButton = document.querySelector("#btn-holiday");
   let mudandoDeCor = document.querySelectorAll(".holiday");
-  let backgroundColor = 'rgb(238,238,238)';
-  let setNewColor = 'red';
-    
+  
     clickButton.addEventListener("click", function(){
         for(let i in mudandoDeCor){
             if(mudandoDeCor[i].style.backgroundColor === setNewColor){
@@ -82,7 +80,7 @@ function createDaysOfTheWeek() {
     })
   };
     
-click()
+click('rgb(238,238,238)', 'red')
 
 //Exercicio 4 
 
@@ -97,3 +95,22 @@ function friday(friday){
 };
 
 friday("Sexta-feira")
+
+// exercicio 5
+
+function fryday(newFriday, dezFriday){
+    let buttonContainer = document.querySelector("#btn-friday") 
+    let clickButton = document.querySelectorAll(".friday")
+     
+    buttonContainer.addEventListener("click", function() {
+        for(let i in clickButton){
+            if(clickButton[i].innerHTML !== newFriday){
+                    clickButton[i].innerHTML = newFriday
+            } else {
+                clickButton[i].innerHTML = dezFriday[i]
+            }
+        }
+    })
+}
+
+fryday("Sextou", [4, 11, 18, 25])
