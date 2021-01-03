@@ -12,3 +12,39 @@ function createDaysOfTheWeek() {
   };
   
   createDaysOfTheWeek();
+    
+  const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+  
+  function day(){
+  
+  const days = document.querySelector("#days");
+    
+  for( let i in dezDaysList){
+        let dayWeeks = dezDaysList[i];
+        let dayItem = document.createElement("li")
+
+        if(dayWeeks === 24 | dayWeeks === 31){
+            dayItem.className = "holiday day"
+            dayItem.innerHTML = dayWeeks
+            days.appendChild(dayItem)
+        }else if(dayWeeks === 4 | dayWeeks === 11){
+            dayItem.className = "friday day"
+            dayItem.innerHTML = dayWeeks
+            days.appendChild(dayItem)
+        }else if(dayWeeks === 18){
+            dayItem.className = "friday day"
+            dayItem.innerHTML = dayWeeks
+            days.appendChild(dayItem)
+        }else if(dayWeeks === 25){
+            dayItem.className = "friday holiday day"
+            dayItem.innerHTML = dayWeeks
+            days.appendChild(dayItem)
+        }else {
+            dayItem.className = "day"
+            dayItem.innerHTML = dayWeeks
+            days.appendChild(dayItem)
+        }
+    }
+  }
+  day()
+  
