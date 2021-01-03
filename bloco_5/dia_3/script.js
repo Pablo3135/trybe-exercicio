@@ -13,6 +13,8 @@ function createDaysOfTheWeek() {
   
   createDaysOfTheWeek();
     
+  // exercicio 1
+
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   
   function day(){
@@ -47,4 +49,37 @@ function createDaysOfTheWeek() {
     }
   }
   day()
-  
+
+//exercicio 2
+
+  function createHoliday(buttonholiday){
+      let btnHoliday = document.querySelector(".buttons-container")
+      let newButton = document.createElement("button")
+      let newButtonId = "btn-holiday"
+
+      newButton.innerHTML = buttonholiday
+      btnHoliday.appendChild(newButton)
+      newButton.id = newButtonId
+  }
+
+  createHoliday("feriados")
+
+  // Exercicio 3
+  function click(){
+  let clickButton = document.querySelector("#btn-holiday");
+  let mudandoDeCor = document.querySelectorAll(".holiday");
+  let backgroundColor = 'rgb(238,238,238)';
+  let setNewColor = 'red';
+    
+    clickButton.addEventListener("click", function(){
+        for(let i = 0; i < mudandoDeCor.length; i += 1){
+            if(mudandoDeCor[i].style.backgroundColor === setNewColor){
+                mudandoDeCor[i].style.background = backgroundColor
+            } else {
+                mudandoDeCor[i].style.background = setNewColor;
+            }
+        }
+    })
+  };
+    
+click()
