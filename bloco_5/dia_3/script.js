@@ -114,3 +114,76 @@ function fryday( dezFriday, newFriday){
 }
 
 fryday([4, 11, 18, 25], "Sextou",)
+
+function dayMouseOver(){
+    let day = document.querySelector("#days")
+    
+    day.addEventListener("mouseover", function(event){
+        event.target.style.fontSize = "30px"
+        event.target.style.fontWeigth = "600"
+    })
+}
+
+dayMouseOver()
+
+function dayMouseOut(){
+    let day = document.querySelector("#days")
+    
+    day.addEventListener("mouseout", function(event){
+        event.target.style.fontSize = "20px"
+        event.target.style.fontWeigth = "200"
+    })
+}
+dayMouseOut()
+
+function texto(inputText) {
+    let text = document.querySelector(".my-tasks")
+    let textName = document.createElement("span")
+    textName.innerHTML = inputText
+    text.appendChild(textName)
+}
+texto("Projeto")
+
+function cor(color) {
+    let pai = document.querySelector(".my-tasks")
+    let filho = document.createElement("div")
+    
+    filho.className = "task"
+    filho.style.background = color
+    pai.appendChild(filho)
+}
+
+cor("green")
+
+function setTasksClass(){
+    let selectedTask= document.getElementsByClassName("task selected");
+    let myTasks = document.querySelector(".task");
+    
+    myTasks.addEventListener("click", function(event) {
+        if(selectedTask.length === 0) {
+            event.target.className = "task selected";
+        } else {
+            event.target.className = "task";
+        }
+    });
+};
+setTasksClass();
+
+function setDayColor() {
+    let selectedTask = document.getElementsByClassName('task selected');
+    let days = document.querySelector('#days');
+    let taskDiv = document.querySelector('.task');
+    let taskColor = taskDiv.style.backgroundColor;
+    
+    days.addEventListener('click', function(event){
+      let eventTargetColor = event.target.style.color;
+      if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+        let color = selectedTask[0].style.backgroundColor;
+        event.target.style.color = color;
+      } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+        event.target.style.color = 'rgb(119,119,119)';
+      }
+    });
+  };
+  
+  setDayColor();
