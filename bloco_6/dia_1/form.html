@@ -6,6 +6,45 @@
     <title>Document</title>
 </head>
 <body>
+  <header>
+    <h1>Cadastro de Curriculo</h1>
+  </header>
+    <form id="cv-form">
+    <div class="form-row"></div>
+    <fieldset>
+        <legend>Dados Pessoas</legend>
+        <div class="line-content">
+        <label for="nome-id">Nome
+            <input type="text" name="nome" id="nome-id" maxlength="40" required>
+        </label>
+        </div>
+        <div class="line-content">
+        <label for="email-id">Email
+            <input type="email" name="email" id="email-id" maxlength="50" required>
+        </label>
+        </div>
+        <div class="line-content">
+        <label for="cpf-id"> CPF
+            <input type="text" name="cpf" id="cpf-id" maxlength="11" required>
+        </label>
+        </div>
+        <div class="line-content">
+        <label for="endereço-id">Endereço
+            <input type="text" name="endereço" id="endereço-id" maxlength="200" required>
+        </label>
+        </div>
+        <div class="line-content">
+        <label for="cidade-id">Cidade
+            <input type="text" name="cidade" id="cidade-id" maxlength="28" required>
+        </label>
+        </div>
+        <div class="line-content">
+        <select name="Estado" id="Estado-id" required>
+            
+        </select>
+        </div>
+    </fieldset>
+    </form>
     <script src="script.js"></script>
 </body>
 </html>
